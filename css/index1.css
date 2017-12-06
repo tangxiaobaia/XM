@@ -1,0 +1,514 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.clear{
+	clear:both;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+span{
+	font-size: 14px;
+}
+
+
+/*<!-- advertise 广告栏 开始 -->*/
+
+#adver{
+
+	height:120px;
+	margin:0 auto;
+}
+/*<!-- advertise 广告栏 结束 -->*/
+
+/*header 开始*/
+
+
+ #header{
+ 	height:40px;
+ 	background-color: #333;
+ }
+
+ #header>div{
+ 	width:1226px;
+ 	height:inherit; /* 继承父元素*/
+ 	margin:0 auto;
+ 	/*border:1px solid red;*/
+
+ }
+
+ #header .left{	
+ 	width:573px;
+ 	height: 40px;
+	font-size:12px;
+	line-height:40px;
+	overflow: hidden;
+	/*border:1px red solid;*/
+ }
+
+ #header  a{
+  	text-decoration: none;
+  	color:#b0b0b0;
+  
+}
+
+ #header  span{
+   	padding:0px 2px;  
+   	 float:left;
+   	 color:#b0b0b0;
+   	 font-size:12px;
+ }
+ #header  span.sep{
+   	color:#424242;
+   	
+ }
+
+ #header .right{
+	height:40px;
+   	line-height: 40px;
+   	/*width:314px;*/
+   	/*border:1px red solid;*/
+ }
+
+ #header .shop-bar{
+	width:120px;
+	height:40px;
+	background-color:#424242;
+	float:right;
+	text-align:center;
+	line-height: 40px;
+	/*border:1px solid red;*/
+	margin-left:10px;
+
+   }
+  #header .shop-bar span{
+  	line-height: 40px;
+  	float:none; /* 上面span中设置的浮动影响了text-align，所以必须去掉浮动*/
+
+  }
+ #header a:hover{
+ 	color:#ffffff;
+ }
+ #header .shop-bar:hover{
+	background-color: white;
+	
+}
+  #header .shop-bar:hover  span{
+	color:#ff6700;
+
+}
+
+/*header 结束*/
+
+
+
+/*nav 导航栏开始*/
+
+#nav{
+	width:1226px;
+	height:100px;
+	border:1px red solid;
+	/*background-color: green;*/
+	margin:0px auto;
+	position: relative;
+	overflow: hidden;
+}
+ .logo, #nav img,.nav-bar{
+	position: absolute;
+}
+
+#nav .logo{
+	width:55px;
+	height:55px;
+	background-color: #ff6700;
+	background-image: url("https://s01.mifile.cn/i/mi-logo.png"); 
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	top:22.5%;
+	/*float: left;*/
+
+}
+
+#nav  img{
+	width: 165px;
+	height: 100px;
+
+	/*float:left;*/
+	left:65px;
+
+}
+
+#nav .nav-bar{
+	overflow: hidden;
+	top:41px;
+	left:245px;
+}
+
+#nav .nav-bar li{
+	float:left;
+	list-style: none;
+	margin:0 7px;
+}
+
+#nav .nav-bar a{
+	text-decoration: none;
+	color:#333333;
+}
+
+#nav .nav-bar a:hover{
+	color:#ff6700;
+}
+
+ .search div{
+	float:left;
+}
+ .search{
+	width:297px;
+	height: 50px;	
+	position: absolute;
+	top:25px;
+	right:0;
+
+}
+
+ .search-input{	
+	padding:14px 10px;
+	width:220px;
+	/*height:48px;*/
+	/*border:1px green solid;*/
+	border:1px #e0e0e0 solid;
+	position: relative;
+
+}
+
+ .search-input input{
+		border:none;
+	outline:none;
+}
+.search .search-input span{
+	background-color: #eeeeee;
+	position: absolute;
+	top:15px;
+	/*left:70px;*/
+	margin-right:10px;
+	color:#757575;
+}
+
+.search .search-input span:hover{
+	background-color: #ff6700;
+	color:white;
+}
+
+ .search-btn{
+	width:52px;
+	height:49px;
+	border:1px #e0e0e0 solid;
+	float:right;
+	line-height: 50px;
+	text-align:center;
+	margin-left:-2px;
+	
+}
+
+
+/*nav 导航栏结束*/
+
+/*目录栏 开始*/
+
+#cate-nav{
+
+	width:1226px;
+	height:460px;
+	margin:0 auto;
+	border:1px solid red;
+	background-image: url("https://i3.mifile.cn/a4/xmad_14992333865949_MVNoP.jpg");
+	position: relative;
+	/*overflow: hidden;*/
+}
+#cate-nav .menu-wraper{
+	width:234px;
+	height:inherit;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.cate-menu{
+	height:440px;
+	padding-top:20px;
+}
+.cate-menu li {
+	height:42px;
+	list-style: none;
+	
+
+}
+.cate-menu li strong{
+	margin-left:27px;
+	line-height: 40px;
+}
+.cate-menu li a{
+	color:white;
+	text-decoration: none;
+	font-size:14px;
+}
+
+.cate-menu span{
+	height:42px;
+	float:right;
+	padding-right:27px;
+	line-height: 42px;
+}
+.cate-menu li:hover {
+	background-color: #ff6700;
+}
+
+{
+
+
+
+}
+
+ #taber-lt-arrow{
+	position:absolute;
+	top:195.5px;
+	left:234px;
+	/*background-color: red;*/
+	width:41px;
+	height:69px;
+
+	font-size: 50px;
+	text-align: center;
+	line-height: 69px;
+	color:#e0e0e0;
+
+}
+
+ #taber-rt-arrow{
+	position:absolute;
+	top:195.5px;
+	right:-990px;
+	/*background-color: red;*/
+	width:41px;
+	height:69px;
+
+	font-size: 50px;
+	text-align: center;
+	line-height: 69px;
+	color:#e0e0e0;
+
+}
+
+#taber-rt-arrow:hover{
+ 	background-color: #757575;
+ 	color:white;
+ }
+ #taber-lt-arrow:hover{
+ 	background-color: #757575;
+ 	color:white;
+ }
+
+/*目录栏 结束*/
+
+
+/*sub nav start*/
+
+
+
+#cate-sub-nav{
+	/*overflow: hidden;*/
+	width:1226px;
+	height:170px;
+	margin:0 auto;
+	
+	border:1px solid red;
+	margin-top:14px;
+}
+#sub-nav{
+	width:234px;
+	height:170px;
+	/*border:1px green solid;*/
+	float:left;
+	background-color: #5f5750;
+
+}
+#sub-nav ul li{
+	float:left;
+	list-style: none;
+	width: 78px;
+	height: 85px;
+	text-align: center;
+	margin-top:14px;
+
+}
+#sub-nav ul li em{
+	
+	font-style: normal;
+}
+
+#sub-nav ul li a{
+	text-decoration: none;
+	color:#cfcdcb;
+	
+}
+
+
+
+#sub-ads{
+	width:992px;
+	height:170px;
+	/*border:1px green solid;*/
+	float:left;
+
+}
+
+#sub-ads img{
+	width:316px;
+	height:170px;
+	float:left;
+	margin-left:14px;
+
+}
+
+/*sub nav end*/
+
+
+/*小米明星单品开始*/
+
+#hot-goods{
+	width: 1226px;
+	height: 398px;
+	margin:0 auto;
+	margin-top:14px;
+	/*border:1px solid red;*/
+	/*overflow: hidden;*/
+	
+}
+
+.head {
+	width: 1226px;
+	height: 58px;
+	/*border:1px solid red;*/
+	position: relative;
+
+}
+.head span{
+	font-size:22px;
+	line-height: 58px
+
+
+}
+
+.arrow-group{
+	
+
+	float:right;
+	position: absolute;
+	top:17px;
+	right:0;
+	width:72px;
+	height: 24px;
+	/*border:1px solid #e0e0e0;*/
+}
+.arrow-group span{
+	font-size:20px;
+	margin-right:2px;
+		width:32px;
+		height: 24px;
+		float:left;	
+	border:1px solid #b0b0b0;
+	text-align: center;
+	line-height: 24px !important;
+	
+}
+
+.wraper ul li{
+
+	float:left;
+	width:234px;
+	height: 340px;
+	margin-right:14px;
+	list-style: none;
+	/*border:1px solid red;*/
+	text-align: center;
+
+}
+
+.wraper ul li img{
+	width: 160px;	
+	height: 160px;	
+	margin-top:40px;
+
+}
+.wraper .good-title{
+	color:#212121;
+	font-size:10px;
+	margin-top:30px;
+	margin-bottom:8px;
+}
+
+.wraper .good-info{
+	color:#b0b0b0;
+	font-size:12px;
+	
+}
+.wraper .good-price{
+	color:#ff6709;
+	font-size:12px;
+	margin-top:14px;
+}
+
+/*小米明星单品结束*/
+
+
+#main-page {
+	background-color: #f5f5f5;
+
+}
+
+#main-page .appliance{
+	width: 1226px;	
+	height: 672px;	
+	border:1px solid red;
+	margin:0 auto;
+}
+.ac-head {
+	border:1px solid red;
+	position: relative;
+
+}
+.ac-head span{
+	width: 1226px;	
+	height: 58px;	
+	font-size:22px;
+	line-height: 58px;
+	
+}
+.ac-tabs{
+
+		width:260px;
+	float:right;
+	/*line-height: 42px;*/
+	position: absolute;
+	top:18.5px;
+	right:0px;
+	
+	/*border:1px solid red;*/
+
+}
+.ac-tabs em{
+	font-style: normal;
+	margin-left:20px;
+	font-size:16px;
+	padding-bottom:3px;
+}
+
+.ac-tabs em:hover{
+	border-bottom: 2px solid #ff6700;
+	color:#ff6700;
+}

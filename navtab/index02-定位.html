@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<link rel="stylesheet" href="../css/xiaominva3.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+
+	</script>
+</head>
+<body>
+
+ <div id="cate-nav">
+   		<div class="menu-wraper">
+   			<div id ="cate-menu">
+				<div>
+					<a href="###">
+						<strong>手机 电话卡</strong> 
+						<span class="fa  fa-angle-right"></span>
+					</a>
+				</div>
+				<div>
+					<a href="###">
+						<strong>笔记本 平板</strong> 
+						<span class="fa  fa-angle-right"></span>
+					</a>
+				</div>
+				<div>
+					<a href="###">
+						<strong>电视 盒子</strong> 
+						<span class="fa  fa-angle-right"></span>
+					</a>
+				</div>
+				<div>
+					<a href="###">
+						<strong>路由器 智能硬件</strong> 
+						<span class="fa  fa-angle-right"></span>
+					</a>
+				</div>
+				<div>
+					<a href="###">
+						<strong>移动电源 电池 插电板</strong> 
+						<span class="fa  fa-angle-right"></span>
+					</a>
+				</div>
+				<div>
+					<a href="###">
+						<strong>耳机 音箱</strong> 
+						<span class="fa  fa-angle-right"></span>
+					</a>
+				</div>
+				<div>
+					<a href="###">
+						<strong>保护套 贴膜</strong> 
+						<span class="fa  fa-angle-right"></span>
+					</a>
+				</div>
+				<div>
+					<a href="###">
+						<strong>线材 支架 存储卡</strong> 
+						<span class="fa  fa-angle-right"></span>
+					</a>
+				</div>
+				<div>
+					<a href="###">
+						<strong>箱包 服饰 鞋 眼镜</strong> 
+						<span class="fa  fa-angle-right"></span>
+					</a>
+				</div>
+				<div>
+					<a href="###">
+						<strong>米兔 生活周边</strong>
+						<span class="fa  fa-angle-right"></span>
+					</a>
+				</div>
+			</div>
+
+		<div class="imgs-taber">
+			<span id="taber-lt-arrow" class="fa fa-angle-left" style="left:234px;">
+				
+			</span>
+		</div>
+
+		<div class="imgs-taber">
+			<span id="taber-rt-arrow" class="fa fa-angle-right" >
+				
+			</span>
+		</div>
+	</div>
+   		<div id="contents">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+
+   </div>
+
+
+
+
+   <script type="text/javascript">
+		var menu = document.getElementById("cate-menu");
+		var menuArr = menu.children;
+		console.log(menuArr);
+
+		var con = document.getElementById("contents");
+		var conArr = con.children;
+		console.log(conArr);
+
+
+
+		for(var i = 0; i < menuArr.length; i++){
+			menuArr[i].onmouseover = (function(index){
+				return (function(){
+					for(var j = 0; j < menuArr.length; j++){
+						menuArr[j].style.background = "rgba(0,0,0.0.5)";
+						conArr[j].className = "unshow";
+					}
+					menuArr[index].style.background = "#ff6700";
+					conArr[index].className ="show";
+
+
+				});
+
+			})(i);
+			menuArr[i].onmouseout = (function(index){
+				return (function(){
+					for(var j = 0; j < menuArr.length; j++){
+						menuArr[j].style.background = "rgba(0,0,0,0)";
+						conArr[j].className = "unshow";
+					}
+
+
+				});
+
+			})(i);
+
+
+		}
+
+	
+</script>
+</body>
+</html>
